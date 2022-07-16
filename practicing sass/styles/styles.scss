@@ -1,0 +1,13 @@
+
+@import "./variables";
+@import "./header"; // importovanje u cssu slicno kao sto bi radili u obicnom jsu i reactu
+
+
+
+.contact {
+    
+    @extend header;
+    background: lightcoral;
+    width: 100% - 20%;
+}
+

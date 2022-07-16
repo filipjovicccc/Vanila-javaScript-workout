@@ -1,0 +1,22 @@
+@mixin flexCenter($direction, $background){
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    // koriscenje specijalne metode @mixin
+    flex-direction:  $direction;
+    background: $background;
+}
+
+header{
+    @include flexCenter(column, red); //prizivamo @mixin sa @include
+    background: lightblue;
+    height: 100vh;
+    color: $textColor;
+    button{
+     background: $primaryBtn;
+     &::after{
+         background: "Hellooo";
+     }
+    }
+    
+ }
