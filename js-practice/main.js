@@ -63,34 +63,34 @@
 
 // console.log(name)
 
-function SetCookie(cname, cvalue, exdays){
-    let d = new Date();
+// function SetCookie(cname, cvalue, exdays){
+//     let d = new Date();
 
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 *1000))
+//     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 *1000))
 
-    var expires = "expires=" + d.toUTCString()
-    document.cookie = cname + "=" + cvalue + "; path=/" + expires + ";";
-}
+//     var expires = "expires=" + d.toUTCString()
+//     document.cookie = cname + "=" + cvalue + "; path=/" + expires + ";";
+// }
 
-function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i = 0; i < ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
-    }
-    return "";
-  }
-  window.addEventListener("load", function() {
-    SetCookie("cookieName", "cookieValue", 30);
-    let cookieValue = getCookie("cookieName");
-    console.log(cookieValue);
-  });
+// function getCookie(cname) {
+//     var name = cname + "=";
+//     var ca = document.cookie.split(';');
+//     for(var i = 0; i < ca.length; i++) {
+//       var c = ca[i];
+//       while (c.charAt(0) == ' ') {
+//         c = c.substring(1);
+//       }
+//       if (c.indexOf(name) == 0) {
+//         return c.substring(name.length, c.length);
+//       }
+//     }
+//     return "";
+//   }
+//   window.addEventListener("load", function() {
+//     SetCookie("cookieName", "cookieValue", 30);
+//     let cookieValue = getCookie("cookieName");
+//     console.log(cookieValue);
+//   });
 
   
 //js-cookie library da se simplifikuje proces dobijanja kukija
@@ -98,6 +98,14 @@ function getCookie(cname) {
 // Cookies.set("name", "value", {expires:7})
   
 //   const value = Cookies.get("name")
+
+// const numsInput = [7, 8,2, 12, 25, 52, 13, 4,]
+
+
+// const numsOutput  = numsInput.filter((item) => item % 2 === 0).sort((a,b)=>a-b) 
+
+// console.log(numsOutput)
+
   
 
 

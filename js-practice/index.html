@@ -5,20 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <style>
+    <!-- <style>
         #myDiv{
             width: 50%;
             height: 25%;
             border: 1px solid black;
         }
+    </style> -->
+    <style>
+        .container{
+            width: 100%;
+            height: 80vh;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .card{
+            width: 400px;
+            height: 350px;
+            border: 1px solid black;
+        }
+
     </style>
 </head>
 <body>
+    <div class="container">
+     <div class="card">Hello from card</div>
+     <div class="card">Hello from card</div>
+     <div class="card">Hello from card</div>
+     <div class="card">Hello from card</div>
+     <div class="card">Hello from card</div>
+    </div>
     
-    <div id="myDiv"></div>
+    <!-- <div id="myDiv"></div>
     <script src="main.js">
 
         
-    </script>
+    </script> -->
 </body>
 </html>
